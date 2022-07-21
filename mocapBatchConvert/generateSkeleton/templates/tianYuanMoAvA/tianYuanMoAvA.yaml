@@ -1,0 +1,480 @@
+Head_M:
+    alignment: Head_M
+    orient_constraint:
+    -   controller: FKHead_M
+    point_constraint:
+    -   controller: FKHead_M
+Neck_M:
+    alignment: Neck_M
+    orient_constraint:
+    -   controller: FKNeck_M
+    point_constraint:
+    -   controller: FKNeck_M
+Chest_M:
+    alignment: Chest_M
+    orient_constraint:
+    -   controller: FKChest_M
+    -   controller: IKSpine3_M
+    point_constraint:
+    -   controller: FKChest_M
+    -   controller: IKSpine3_M
+Spine2_M:
+    alignment: Spine2_M
+    orient_constraint:
+    -   controller: FKSpine2_M
+    -   controller: IKSpine2_M
+    point_constraint:
+    -   controller: FKSpine2_M
+Spine1_M:
+    alignment: Spine1_M
+    orient_constraint:
+    -   controller: FKSpine1_M
+    point_constraint:
+    -   controller: FKSpine1_M
+Root_M:
+    alignment: Root_M
+    # orient_constraint:
+    # -   controller: FKRoot_M
+    # -   controller: HipSwinger_M
+    # -   controller: IKSpine1_M
+    # point_constraint:
+    # -   controller: FKRoot_M
+    # -   controller: IKSpine1_M
+    orient_constraint:
+    -   controller: RootX_M
+    point_constraint:
+    -   controller: RootX_M
+Scapula_L:
+    alignment: Scapula_L
+    orient_constraint:
+    -   controller: FKScapula_L
+    point_constraint:
+    -   controller: FKScapula_L
+Shoulder_L:
+    alignment: Shoulder_L
+    orient_constraint:
+    -   controller: FKShoulder_L
+    point_constraint:
+    -   controller: FKShoulder_L
+Elbow_L:
+    alignment: Elbow_L
+    orient_constraint:
+    -   controller: FKElbow_L
+    pilot_constraint:
+    -   axis: y
+        controller: PoleArm1_L
+        ratio: 10
+Wrist_L:
+    alignment: Wrist_L
+    orient_constraint:
+    -   controller: FKWrist_L
+    -   controller: IKArm1_L
+    point_constraint:
+    -   controller: IKArm1_L
+ThumbFinger1_L:
+    alignment: ThumbFinger1_L
+    orient_constraint:
+    -   controller: FKThumbFinger1_L
+ThumbFinger2_L:
+    alignment: ThumbFinger2_L
+    orient_constraint:
+    -   controller: FKThumbFinger2_L
+ThumbFinger3_L:
+    alignment: ThumbFinger3_L
+    orient_constraint:
+    -   controller: FKThumbFinger3_L
+IndexFinger0_L:
+    alignment: IndexFinger0_L
+    orient_constraint:
+    -   controller: FKIndexFinger0_L
+IndexFinger1_L:
+    alignment: IndexFinger1_L
+    orient_constraint:
+    -   controller: FKIndexFinger1_L
+IndexFinger2_L:
+    alignment: IndexFinger2_L
+    orient_constraint:
+    -   controller: FKIndexFinger2_L
+IndexFinger3_L:
+    alignment: IndexFinger3_L
+    orient_constraint:
+    -   controller: FKIndexFinger3_L
+MiddleFinger0_L:
+    alignment: MiddleFinger0_L
+    orient_constraint:
+    -   controller: FKMiddleFinger0_L
+MiddleFinger1_L:
+    alignment: MiddleFinger1_L
+    orient_constraint:
+    -   controller: FKMiddleFinger1_L
+MiddleFinger2_L:
+    alignment: MiddleFinger2_L
+    orient_constraint:
+    -   controller: FKMiddleFinger2_L
+MiddleFinger3_L:
+    alignment: MiddleFinger3_L
+    orient_constraint:
+    -   controller: FKMiddleFinger3_L
+RingFinger0_L:
+    alignment: RingFinger0_L
+    orient_constraint:
+    -   controller: FKRingFinger0_L
+RingFinger1_L:
+    alignment: RingFinger1_L
+    orient_constraint:
+    -   controller: FKRingFinger1_L
+RingFinger2_L:
+    alignment: RingFinger2_L
+    orient_constraint:
+    -   controller: FKRingFinger2_L
+RingFinger3_L:
+    alignment: RingFinger3_L
+    orient_constraint:
+    -   controller: FKRingFinger3_L
+ScapulaB_L:
+    alignment: ScapulaB_L
+    orient_constraint:
+    -   controller: FKScapulaB_L
+    point_constraint:
+    -   controller: FKScapulaB_L
+ShoulderB_L:
+    alignment: ShoulderB_L
+    orient_constraint:
+    -   controller: FKShoulderB_L
+    point_constraint:
+    -   controller: FKShoulderB_L
+ElbowB_L:
+    alignment: ElbowB_L
+    orient_constraint:
+    -   controller: FKElbowB_L
+    pilot_constraint:
+    -   axis: y
+        controller: PoleArm2_L
+        ratio: 10
+WristB_L:
+    alignment: WristB_L
+    orient_constraint:
+    -   controller: FKWristB_L
+    -   controller: IKArm2_L
+    point_constraint:
+    -   controller: IKArm2_L
+ThumbFingerB1_L:
+    alignment: ThumbFingerB1_L
+    orient_constraint:
+    -   controller: FKThumbFingerB1_L
+ThumbFingerB2_L:
+    alignment: ThumbFingerB2_L
+    orient_constraint:
+    -   controller: FKThumbFingerB2_L
+ThumbFingerB3_L:
+    alignment: ThumbFingerB3_L
+    orient_constraint:
+    -   controller: FKThumbFingerB3_L
+IndexFingerB0_L:
+    alignment: IndexFingerB0_L
+    orient_constraint:
+    -   controller: FKIndexFingerB0_L
+IndexFingerB1_L:
+    alignment: IndexFingerB1_L
+    orient_constraint:
+    -   controller: FKIndexFingerB1_L
+IndexFingerB2_L:
+    alignment: IndexFingerB2_L
+    orient_constraint:
+    -   controller: FKIndexFingerB2_L
+IndexFingerB3_L:
+    alignment: IndexFingerB3_L
+    orient_constraint:
+    -   controller: FKIndexFingerB3_L
+MiddleFingerB0_L:
+    alignment: MiddleFingerB0_L
+    orient_constraint:
+    -   controller: FKMiddleFingerB0_L
+MiddleFingerB1_L:
+    alignment: MiddleFingerB1_L
+    orient_constraint:
+    -   controller: FKMiddleFingerB1_L
+MiddleFingerB2_L:
+    alignment: MiddleFingerB2_L
+    orient_constraint:
+    -   controller: FKMiddleFingerB2_L
+MiddleFingerB3_L:
+    alignment: MiddleFingerB3_L
+    orient_constraint:
+    -   controller: FKMiddleFingerB3_L
+RingFingerB0_L:
+    alignment: RingFingerB0_L
+    orient_constraint:
+    -   controller: FKRingFingerB0_L
+RingFingerB1_L:
+    alignment: RingFingerB1_L
+    orient_constraint:
+    -   controller: FKRingFingerB1_L
+RingFingerB2_L:
+    alignment: RingFingerB2_L
+    orient_constraint:
+    -   controller: FKRingFingerB2_L
+RingFingerB3_L:
+    alignment: RingFingerB3_L
+    orient_constraint:
+    -   controller: FKRingFingerB3_L
+Scapula_R:
+    alignment: Scapula_R
+    orient_constraint:
+    -   controller: FKScapula_R
+    point_constraint:
+    -   controller: FKScapula_R
+Shoulder_R:
+    alignment: Shoulder_R
+    orient_constraint:
+    -   controller: FKShoulder_R
+    point_constraint:
+    -   controller: FKShoulder_R
+Elbow_R:
+    alignment: Elbow_R
+    orient_constraint:
+    -   controller: FKElbow_R
+    pilot_constraint:
+    -   axis: y
+        controller: PoleArm1_R
+        ratio: -10
+Wrist_R:
+    alignment: Wrist_R
+    orient_constraint:
+    -   controller: FKWrist_R
+    -   controller: IKArm1_R
+    point_constraint:
+    -   controller: IKArm1_R
+ThumbFinger1_R:
+    alignment: ThumbFinger1_R
+    orient_constraint:
+    -   controller: FKThumbFinger1_R
+ThumbFinger2_R:
+    alignment: ThumbFinger2_R
+    orient_constraint:
+    -   controller: FKThumbFinger2_R
+ThumbFinger3_R:
+    alignment: ThumbFinger3_R
+    orient_constraint:
+    -   controller: FKThumbFinger3_R
+IndexFinger0_R:
+    alignment: IndexFinger0_R
+    orient_constraint:
+    -   controller: FKIndexFinger0_R
+IndexFinger1_R:
+    alignment: IndexFinger1_R
+    orient_constraint:
+    -   controller: FKIndexFinger1_R
+IndexFinger2_R:
+    alignment: IndexFinger2_R
+    orient_constraint:
+    -   controller: FKIndexFinger2_R
+IndexFinger3_R:
+    alignment: IndexFinger3_R
+    orient_constraint:
+    -   controller: FKIndexFinger3_R
+MiddleFinger0_R:
+    alignment: MiddleFinger0_R
+    orient_constraint:
+    -   controller: FKMiddleFinger0_R
+MiddleFinger1_R:
+    alignment: MiddleFinger1_R
+    orient_constraint:
+    -   controller: FKMiddleFinger1_R
+MiddleFinger2_R:
+    alignment: MiddleFinger2_R
+    orient_constraint:
+    -   controller: FKMiddleFinger2_R
+MiddleFinger3_R:
+    alignment: MiddleFinger3_R
+    orient_constraint:
+    -   controller: FKMiddleFinger3_R
+RingFinger0_R:
+    alignment: RingFinger0_R
+    orient_constraint:
+    -   controller: FKRingFinger0_R
+RingFinger1_R:
+    alignment: RingFinger1_R
+    orient_constraint:
+    -   controller: FKRingFinger1_R
+RingFinger2_R:
+    alignment: RingFinger2_R
+    orient_constraint:
+    -   controller: FKRingFinger2_R
+RingFinger3_R:
+    alignment: RingFinger3_R
+    orient_constraint:
+    -   controller: FKRingFinger3_R
+ScapulaB_R:
+    alignment: ScapulaB_R
+    orient_constraint:
+    -   controller: FKScapulaB_R
+    point_constraint:
+    -   controller: FKScapulaB_R
+ShoulderB_R:
+    alignment: ShoulderB_R
+    orient_constraint:
+    -   controller: FKShoulderB_R
+    point_constraint:
+    -   controller: FKShoulderB_R
+ElbowB_R:
+    alignment: ElbowB_R
+    orient_constraint:
+    -   controller: FKElbowB_R
+    pilot_constraint:
+    -   axis: y
+        controller: PoleArm2_R
+        ratio: -10
+WristB_R:
+    alignment: WristB_R
+    orient_constraint:
+    -   controller: FKWristB_R
+    -   controller: IKArm2_R
+    point_constraint:
+    -   controller: IKArm2_R
+ThumbFingerB1_R:
+    alignment: ThumbFingerB1_R
+    orient_constraint:
+    -   controller: FKThumbFingerB1_R
+ThumbFingerB2_R:
+    alignment: ThumbFingerB2_R
+    orient_constraint:
+    -   controller: FKThumbFingerB2_R
+ThumbFingerB3_R:
+    alignment: ThumbFingerB3_R
+    orient_constraint:
+    -   controller: FKThumbFingerB3_R
+IndexFingerB0_R:
+    alignment: IndexFingerB0_R
+    orient_constraint:
+    -   controller: FKIndexFingerB0_R
+IndexFingerB1_R:
+    alignment: IndexFingerB1_R
+    orient_constraint:
+    -   controller: FKIndexFingerB1_R
+IndexFingerB2_R:
+    alignment: IndexFingerB2_R
+    orient_constraint:
+    -   controller: FKIndexFingerB2_R
+IndexFingerB3_R:
+    alignment: IndexFingerB3_R
+    orient_constraint:
+    -   controller: FKIndexFingerB3_R
+MiddleFingerB0_R:
+    alignment: MiddleFingerB0_R
+    orient_constraint:
+    -   controller: FKMiddleFingerB0_R
+MiddleFingerB1_R:
+    alignment: MiddleFingerB1_R
+    orient_constraint:
+    -   controller: FKMiddleFingerB1_R
+MiddleFingerB2_R:
+    alignment: MiddleFingerB2_R
+    orient_constraint:
+    -   controller: FKMiddleFingerB2_R
+MiddleFingerB3_R:
+    alignment: MiddleFingerB3_R
+    orient_constraint:
+    -   controller: FKMiddleFingerB3_R
+RingFingerB0_R:
+    alignment: RingFingerB0_R
+    orient_constraint:
+    -   controller: FKRingFingerB0_R
+RingFingerB1_R:
+    alignment: RingFingerB1_R
+    orient_constraint:
+    -   controller: FKRingFingerB1_R
+RingFingerB2_R:
+    alignment: RingFingerB2_R
+    orient_constraint:
+    -   controller: FKRingFingerB2_R
+RingFingerB3_R:
+    alignment: RingFingerB3_R
+    orient_constraint:
+    -   controller: FKRingFingerB3_R
+Hip_L:
+    alignment: Hip_L
+    orient_constraint:
+    -   controller: FKHip_L
+Knee_L:
+    alignment: Knee_L
+    orient_constraint:
+    -   controller: FKKnee_L
+Ankle_L:
+    alignment: Ankle_L
+    orient_constraint:
+    -   controller: FKAnkle_L
+    -   controller: IKLeg_L
+    point_constraint:
+    -   controller: IKLeg_L
+Toes_L:
+    alignment: Toes_L
+    orient_constraint:
+    -   controller: FKToes_L
+BigToe1_L:
+    alignment: BigToe1_L
+    orient_constraint:
+    -   controller: FKBigToe1_L
+BigToe2_L:
+    alignment: BigToe2_L
+    orient_constraint:
+    -   controller: FKBigToe2_L
+LongToe1_L:
+    alignment: LongToe1_L
+    orient_constraint:
+    -   controller: FKLongToe1_L
+LongToe2_L:
+    alignment: LongToe2_L
+    orient_constraint:
+    -   controller: FKLongToe2_L
+MiddleToe1_L:
+    alignment: MiddleToe1_L
+    orient_constraint:
+    -   controller: FKMiddleToe1_L
+MiddleToe2_L:
+    alignment: MiddleToe2_L
+    orient_constraint:
+    -   controller: FKMiddleToe2_L
+Hip_R:
+    alignment: Hip_R
+    orient_constraint:
+    -   controller: FKHip_R
+Knee_R:
+    alignment: Knee_R
+    orient_constraint:
+    -   controller: FKKnee_R
+Ankle_R:
+    alignment: Ankle_R
+    orient_constraint:
+    -   controller: FKAnkle_R
+    -   controller: IKLeg_R
+    point_constraint:
+    -   controller: IKLeg_R
+Toes_R:
+    alignment: Toes_R
+    orient_constraint:
+    -   controller: FKToes_R
+BigToe1_R:
+    alignment: BigToe1_R
+    orient_constraint:
+    -   controller: FKBigToe1_R
+BigToe2_R:
+    alignment: BigToe2_R
+    orient_constraint:
+    -   controller: FKBigToe2_R
+LongToe1_R:
+    alignment: LongToe1_R
+    orient_constraint:
+    -   controller: FKLongToe1_R
+LongToe2_R:
+    alignment: LongToe2_R
+    orient_constraint:
+    -   controller: FKLongToe2_R
+MiddleToe1_R:
+    alignment: MiddleToe1_R
+    orient_constraint:
+    -   controller: FKMiddleToe1_R
+MiddleToe2_R:
+    alignment: MiddleToe2_R
+    orient_constraint:
+    -   controller: FKMiddleToe2_R
